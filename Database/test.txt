@@ -1,0 +1,36 @@
+CREATE TABLE users(	
+		userID int primary key NOT NULL,
+	 	username varchar(20), 
+		password varchar(20),  
+		stroke bool, 
+		parkinson bool, 
+		HIV bool, 
+		depression bool, 
+		head_injury bool, 
+		heart_disease bool, 
+		lipid_disorders bool, 
+		alzheimer_history bool, 
+		test_num int,
+		active bool
+		);
+
+CREATE TABLE results(
+	resultsID int primary key,
+	userID int,
+	testID int,
+	date TEXT,
+	misplace_belonging int,
+	lost_in_familar_place int,
+	forget_appointment int,
+	forget_name_or_face int,
+	withdraw_work_or_social int,
+	coversation_difficulty int,
+	picture_test_time text,
+	picture_test_score float,
+	captcha_test_time text,
+	captcha_test_score float,
+	problem_solving_time text,
+	problem_solving_score int,
+	active bool,
+	foreign key(userID) references users(userID)
+	);
