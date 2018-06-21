@@ -1,0 +1,39 @@
+CREATE TABLE users(	
+		userID INTEGER primary key Autoincrement NOT NULL,
+	 	username varchar(20) NOT NULL, 
+		password varchar(20) NOT NULL, 
+		stroke bool NOT NULL DEFAULT false, 
+		parkinson bool NOT NULL DEFAULT false, 
+		HIV bool NOT NULL DEFAULT false, 
+		depression bool NOT NULL DEFAULT false, 
+		head_injury bool NOT NULL DEFAULT false, 
+		heart_disease bool NOT NULL DEFAULT false, 
+		lipid_disorders bool NOT NULL DEFAULT false, 
+		alzheimer_history bool NOT NULL DEFAULT false, 
+		test_num int NOT NULL DEFAULT 1,
+		active bool NOT NULL DEFAULT true
+		);
+
+CREATE TABLE results(
+	resultsID INTEGER primary key Autoincrement,
+	userID int NOT NULL,
+	testID int NOT NULL,
+	date TEXT NOT NULL,
+	misplace_belonging int,
+	lost_in_familar_place int,
+	forget_appointment int,
+	forget_name_or_face int,
+	withdraw_work_or_social int,
+	coversation_difficulty int,
+	picture_test_time text,
+	picture_test_score float,
+	captcha_test_time text,
+	captcha_test_score float,
+	problem_solving_time text,
+	problem_solving_score int,
+	has_alzheimers bool Default false,
+	active bool,
+	foreign key(userID) references users(userID)
+	);
+
+INSERT INTO users(username, password) values('test', 'test');
