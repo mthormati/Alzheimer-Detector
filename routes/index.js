@@ -17,6 +17,14 @@ router.post('/login', function(req, res, next) {
   return res.redirect('/home')
 });
 
+router.post('/submitHistory', function(req, res, next) {
+  res.render('home')
+})
+
+router.post('/submitTest', function(req, res, next) {
+  res.render('home')
+})
+
 router.get('/home', function(req, res, next) {
   res.render('home')
 });
