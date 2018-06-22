@@ -1,0 +1,222 @@
+<div class="ws-background"></div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Alzheimer Detector</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/test">Test</a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+
+<div class="container">
+    <form action="/submitHistory" method="post">
+        <div class="row">
+            <div class="col">
+                <div class="z-depth-4 p-5 mt-4 profile-container">
+                    <span><b>Past Medical History:</b></span>
+                    <div class="form-check my-1 ml-4 align-bottom">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Stroke</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Parkinson’s Disease</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">HIV Infection</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Depression</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Head Injury</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Heart Disease</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Lipid Disorders (Cholesterol levels)</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">History of Alzheimer’s disease or dementia in the family</label>
+                    </div>
+                    <div class="form-check my-1 ml-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" style="margin-top: 3px;" for="exampleCheck1">Recent unusual event</label>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="z-depth-4 p-5 mt-5 profile-container">
+                    <span><b>Demographic Information:</b></span>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Select Race</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>                        
+                        <option>American Indian or Alaska Native</option>
+                        <option>Asian</option>
+                        <option>Black or African American</option>
+                        <option>Native Hawaiian or Other Pacific Islander</option>
+                        <option>White</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 mb-2">Enter Date of Birth</div>
+                    <div class="form-group row">
+                        <input type="number" class="form-control input-max ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+                        <span class="date-slash ml-3">/</span>
+                        <input type="number" class="form-control input-max ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+                        <span class="date-slash ml-3">/</span>
+                        <input type="number" class="form-control input-max ml-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Select Gender</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Select Highest Education Level</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>Less than High School</option>
+                        <option>High School Diploma</option>
+                        <option>Associate’s Degree</option>
+                        <option>Bachelor’s Degree</option>
+                        <option>Master’s Degree</option>
+                        <option>Doctoral or Professional Degree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="z-depth-4 p-5 mt-5 profile-container">
+                    <span><b>Current Medication:</b></span>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="z-depth-4 p-5 mt-5 profile-container">
+                    <span><b>Caregiver/User Feedback:</b></span>
+                    <div class="mt-3">Give number of occurrences each happened in the past week</div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Misplace a belonging</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Feel lost in a familiar location</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Forget an appointment</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Forget a familiar name or face</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Withdraw from a work or social activity</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Have difficulty carrying on a conversation/finishing a basic sentence</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col"></div>
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </form>
+</div>

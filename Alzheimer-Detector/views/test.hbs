@@ -1,0 +1,87 @@
+<div class="ws-background"></div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Alzheimer Detector</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/test">Test</a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<div class="container">
+    <form action="/submitTest" method="post">
+        <div class="row">
+            <div class="col">
+                <div class="z-depth-4 p-5 mt-5 profile-container">
+                    {{#each questions as |item|}}
+                        {{#with item}}
+                            {{> question}}
+                        {{/with}}
+                    {{/each}}
+
+                    <div class="mt-3 mb-2"><b>Question 13</b></div>
+                    <div class="row">
+                        <div class="col">
+                            <span>A flower shtop has 48 daisies and 12 roses. How many times more daisies are there than roses?</span>
+                        </div>
+                    </div>
+                    <!-- Material input -->
+                    <div class="md-form mt-0">
+                        <input type="text" id="form1" class="form-control" placeholder="Answer">
+                    </div>
+                    <div class="mt-3 mb-2"><b>Question 14</b></div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Mitchell bought 7 packs of stickers with 11 stickers in each pack. How many stickers did Mitchell buy?</span>
+                        </div>
+                    </div>
+                    <!-- Material input -->
+                    <div class="md-form mt-0">
+                        <input type="text" id="form1" class="form-control" placeholder="Answer">
+                    </div>
+                    <div class="mt-3 mb-2"><b>Question 15</b></div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Katie collected 8 stamps every month for 4 months. How many stamps did Katie collect?</span>
+                        </div>
+                    </div>
+                    <!-- Material input -->
+                    <div class="md-form mt-0">
+                        <input type="text" id="form1" class="form-control" placeholder="Answer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center my-5">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

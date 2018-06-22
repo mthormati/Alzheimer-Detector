@@ -17,7 +17,20 @@ a {
 }
 
 .ws-background {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: whitesmoke;
+  position: fixed;
+}
+
+.profile-container {
+  border-radius: .25rem;
+}
+
+.input-max {
+  max-width: 100px;
+}
+
+.date-slash {
+  font-size: 30px;
 }
